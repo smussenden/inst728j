@@ -1,0 +1,17 @@
+Part 2: QUIZ
+A. Please explain web server, web browser, url.
+A web server is special kind of computer on which materials (text, images, video, et cetera) are stored that are "served up" when requested by a user. A web browser is a piece of software on a user's computer that is used to retrieve and display files from web servers. A URL -- a.k.a. Uniform Resource Locator -- provides the location of a webpage.
+B. What is difference between html and http?
+HTML (Hyper Text Markup Language) is a language that determines how web pages are shown in a browser. HTTP (Hyper Text Transfer Protocol) structures messages that are sent between a browser and a web server and vice versa.
+C. What is the usage of page structure tags (<html>, <head>, <body>)? Can you work without
+them?
+Technically speaking, you can view an HTML document in a browser that has none of these tags. A plain text page is one such example.  But they are important, functionally, for the proper display of valid HTML content.  The HTML tag tells the browser to interpret the page as HTML content.  The head tag contains information that typically won't display on the page (i.e. meta properties or links to stylesheets). The body tag contains content that will be displayed to the user.
+D. What is <title> tag used for?
+This determines the title of the Web page.  It appears in browser tabs, is passed to search engines and is used on social platforms when someone posts a link.
+E. Can you identify difference between <div> and <p> tag when styling a page?
+Yes.  A p tag is intended for a paragraph or text content.  DIVs tend to serve a more structural purpose on the page, although they frequently contain text.
+F. Provide tags for different levels of headings that HTML support?
+HTML provides supports for six levels of headings, H1 through H6.
+G. Joe is a potential Fall 2019 UMD student. He wants to submit his application files to UMD admission website. Draw a diagram to illustrate how Joe’s machine communicates with UMD
+website to return UMD admission page.
+Linked separately.

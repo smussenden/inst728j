@@ -1,0 +1,149 @@
+Quiz:
+1. Can ordered and unordered lists nested within each other?
+If you mean, can you have an unordered list in which there is an ordered list nested within one of the li tags, the answer is yes, see below. If you mean, can you have the first item be a bullet and the second item be a number, I don't think so.
+<ul>
+  <li>first unordered item</li>
+  <li>second unordered item</li>
+  <li>
+    <ol>
+      <li>first ordered item</li>
+      <li>second ordered item</li>
+    </ol>
+  </li>
+</ul>
+
+<ol>
+  <li>first ordered item</li>
+  <li>second ordered item</li>
+  <li>
+    <ul>
+      <li>first unordered item</li>
+      <li>second unordered item</li>
+    </ul>
+  </li>
+</ol>
+
+2. Is it possible to nest an ordered list within an unordered list or vice versa?
+Yes, see above.
+3. Give example showing customizing of ordered and unordered list?
+I'm not sure what exactly this is asking, but here's an example of what I was talking about above, code mixing up ul and ol.
+<ul>
+  <li>first unordered item</li>
+  <li>second unordered item</li>
+  <li>
+    <ol>
+      <li>first ordered item</li>
+      <li>second ordered item</li>
+    </ol>
+  </li>
+</ul>
+
+<ol>
+  <li>first ordered item</li>
+  <li>second ordered item</li>
+  <li>
+    <ul>
+      <li>first unordered item</li>
+      <li>second unordered item</li>
+    </ul>
+  </li>
+</ol>
+4. Describe basic parts of a table and tags used to identify them?
+There are several parts of a table, which appears similar in structure to a spreadsheet.  The start and end of the table itself is denoted by <table> and </table>. Nested inside of the table are rows, denoted by <tr></tr>.  At the top of the table, nested inside the first row, are table header cells, denoted by <th></th>.  Moving down the table, inside of rows are nested table cells <td></td>. By using combinations of rows and cell tags, the rows and columns of the table are created.
+5. How do you create cells that span more than one column or row?
+By using the colspan or rowspan attribute. See below.
+<style>
+  table, th,td, tr {
+    border: 1px dashed blue;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+  }
+</style>
+
+<table>
+  <tr>
+    <th>Column 1</th>
+    <th>Column 2</th>
+  </tr>
+  <tr>
+    <td>Cell 1</td>
+    <td>Cell 2</td>
+  </tr>
+  <tr>
+    <td colspan="2">Two column cell</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Column 1</th>
+    <th>Column 2</th>
+    <th>Column 3</th>
+  </tr>
+  <tr>
+    <td>Row 1 Cell 1</td>
+    <td>Row 1 Cell 2</td>
+    <td>Row 1 Cell 3</td>
+  </tr>
+  <tr>
+    <td>Row 2 Cell 1</td>
+    <td>Row 2 Cell 2</td>
+    <td rowspan="2">Row 2 Cell 3 (span 2 rows)</td>
+  </tr>
+  <tr>
+    <td>Row 3 Cell 1</td>
+    <td>Row 3 Cell 2</td>
+  </tr>
+</table>
+
+
+6. Create a nested table that contains 4 rows and 5 columns. Create a second table that contains 3 rows and 2 columns inside 3rd row and 4th col of parent table.
+
+<table>
+  <tr>
+    <td>Cell 1</td>
+    <td>Cell 2</td>
+    <td>Cell 3</td>
+    <td>Cell 4</td>
+    <td>Cell 5</td>
+  </tr>
+  <tr>
+    <td>Cell 1</td>
+    <td>Cell 2</td>
+    <td>Cell 3</td>
+    <td>Cell 4</td>
+    <td>Cell 5</td>
+  </tr>
+  <tr>
+    <td>Cell 1</td>
+    <td>Cell 2</td>
+    <td>Cell 3</td>
+    <td>
+      <table>
+        <tr>
+          <td>Cell 1</td>
+          <td>Cell 2</td>
+        </tr>
+        <tr>
+          <td>Cell 1</td>
+          <td>Cell 2</td>
+        </tr>
+        <tr>
+          <td>Cell 1</td>
+          <td>Cell 2</td>
+        </tr>
+      </table>
+    </td>
+    <td>Cell 5</td>
+  </tr>
+  <tr>
+    <td>Cell 1</td>
+    <td>Cell 2</td>
+    <td>Cell 3</td>
+    <td>Cell 4</td>
+    <td>Cell 5</td>
+  </tr>
+
+7. Write down styling attributes you can use while creating table and explain what they do.
+There are several examples of table styling attributes. The border attribute allows you to detail the border width, type (solid, dotted) and color of the table, rows and cells. You can also use width and height to set the size of the table. You can also align the text using text-align, center left or right. Padding is used to set space between text or images in a table and table borders. You can also set the background color of the table. There are many other options, but these are a few of them. 

@@ -1,0 +1,75 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Thank you</title>
+  <meta http-equiv="Content-Type" content="text/html;"/>
+  <style>
+    table, th,td, tr {
+      border: 1px dashed blue;
+    	padding: 10px;
+    	text-align: left;
+      vertical-align: top;
+    }
+  </style>
+</head>
+<body>
+  <fieldset>
+    <form name="aform" method="post" action="thankyou.html">
+      <table width="100%" cellpadding="1" cellspacing="0" bgcolor="#FBEEEE">
+        <tr>
+          <td width="20%">
+          </td>
+          <td width="50%">
+
+            <table width="100%" cellspacing="0">
+            <tr>
+              <td>
+               <strong><font color="#9B3333">FEEDBACK</font></strong>
+              </td>
+              <td>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                	<label for="caseid"><strong>CaseID:</strong></label>
+              </td>
+              <td>
+                <input type="text" placeholder="34564">
+              </td>
+            </tr>
+            <tr>
+              <td><label for="subject"><strong>Subject:</strong><span style="color:red;">*</span></label>
+              </td>
+              <td><input type="text" placeholder="" style="width:300px;">
+              </td>
+            </tr>
+            <tr>
+              <td><label for="comment"><strong>Comment:</strong></label>
+              </td>
+              <td><textarea id="txtArea" rows="10" cols="30"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="importance"><strong>IMPORTANCE:</strong></label>
+              </td>
+              <td>
+              	<input type="radio" name="Gender">High<br>
+              	<input type="radio" name="Gender">Medium<br>
+                <input type="radio" name="Gender" checked>Low<br>
+                <input type="submit" value="Submit">
+              </td>
+            </tr>
+            </table>
+          </td>
+          <td width="10%">
+          </td>
+        </tr>
+      </table>
+  </fieldset>
+
+
+
+
+</body>
+</html>
