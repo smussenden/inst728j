@@ -1,0 +1,92 @@
+body {
+    background-image: linear-gradient(#bf6d6e,#aa3939);
+    height: 1000px;
+}
+
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: -5px;
+  background-color: #993932;
+}
+
+.bottom-container {
+  margin-bottom: 3px;
+}
+
+.head-container {
+  width: 100%;
+  background-color: white;
+  margin: 2px 0px 1px 0px;
+}
+
+.head-container img {
+  height: 40px;
+  display: inline-block;
+  margin: 5px;
+}
+
+.left-container {
+  width: 350px;
+  display: inline-block;
+}
+
+.left-container ul {
+list-style-position: outside;
+padding-inline-start: 25px;
+}
+
+.left-container ul li {
+  color: #eaba1f;
+  list-style-type: square;
+}
+
+.fback {
+  padding-left: 30px;
+  text-decoration: underline;
+}
+
+.center-container {
+  width: 700px;
+  display: inline-block;
+  background-color: #eee7e1;
+  padding: 10px 10px 1px 10px;
+}
+
+fieldset {
+  border-width: 0px;
+}
+
+.please-complete {
+  font-weight: bold;
+  padding: 5px 0px 20px 15px;
+}
+
+.right-container {
+  width: 25px;
+  display: inline-block;
+}
+
+.footer-container {
+  width:1180px;
+  text-align: center;
+  background-color: #FBEEEE;
+  padding: 10px;
+}
+
+input.submit {
+  background-color: #cccccc;
+  border: 1px solid black;
+  color: black;
+  padding: 2px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+}
+
+  table, th, td, tr {
+    padding: 3px;
+    text-align: left;
+    vertical-align: top;
+  }
