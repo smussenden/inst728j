@@ -1,0 +1,269 @@
+/*styles for my resume*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 12px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #444;
+  padding: 0px;
+  margin: 0px;
+}
+
+div, p, ol, li {
+  font-weight: 300;
+}
+
+#top {
+  margin: 0px 0px 15px 0px;
+  padding: 0px 0px 10px 0px;
+  background-color: #fff;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+  position: fixed;
+}
+
+.menu {
+  margin:0;
+  padding:0;
+  text-align: center;
+}
+
+.menu li {
+  display: inline;
+}
+
+#name {
+    font-size: 4em;
+    text-align: center;
+    border-bottom: 1px solid #FDB020;
+    margin: 5px auto 5px auto;
+    width: 60%;
+    min-width:300px;
+}
+
+#bottom {
+    margin: 0px auto;
+    position: relative;
+    top:120px;
+    width: 95%;
+    height: auto;
+    overflow: auto;
+}
+
+.sectionheader {
+  font-size: 2em;
+  text-transform: uppercase;
+  background-color: #d1d1d1;
+  color: rgba(255,255,255,1);
+  margin: 7px 0px 10px 0px;
+  padding: 5px 10px 5px 10px;
+  width: 30%;
+  min-width: 150px;
+  text-align: center;
+  border-bottom: 1px solid rgba(253,176,32,0.4);
+  float: left;
+}
+
+.job {
+  margin: 0px 0px 15px 0px;
+}
+
+.alljobs {
+  width: 65%;
+  float: left;
+  margin: 0px 0px 0px 4%;
+  border-left: 1px solid rgba(253,176,32,0.3);
+  padding: 0px 0px 0px 20px;
+}
+
+.jobtitle {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.organization {
+  font-size: 1.33em;
+}
+
+
+.date {
+  font-size: 1em;
+  font-style: italic;
+  margin: 2px 0px 0px 0px;
+}
+
+.description {
+  margin: 10px 0px 0px 0px;
+}
+
+p, ol, li {
+  font-size: 1.1em;
+}
+
+#experience, #education, #skills {
+  margin: 0px auto 20px auto;
+  padding: 10px;
+  width: 90%;
+  height: auto;
+  overflow: auto;
+  border: 1px solid #f2f2f2;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+#degrees, #do {
+  margin: 5px 0px 0px 4%;
+  width: 65%;
+  float: left;
+  list-style-type: none;
+  -webkit-padding-start: 21px;
+  border-left: 1px solid rgba(253,176,32,0.3);
+}
+
+#do li, #degrees li {
+  margin: 0px 0px 3px 0px;
+}
+
+li a {
+  text-decoration: none;
+  color: #444;
+}
+
+/*Everything below this comment is new */
+
+/*This is for the span tags wrapped around degree names*/
+.bolding {
+  font-weight: 600;
+}
+
+/*Adding media queries */
+
+/*Mobile devices, phones*/
+@media only screen and (max-width: 767px) {
+
+  /*Removes the fixed menu*/
+  #top {
+    position: relative;
+  }
+
+  #name {
+    font-size: 3em;
+  }
+  /*Fixes the extra space after removing fixed menu*/
+  #bottom  {
+    top:0px;
+  }
+  /*Gets rid of two column structure within each section*/
+  .alljobs {
+    width: 100%;
+    float: none;
+    margin: 0px 0px 0px 0px;
+    border-left: 0px solid rgba(253,176,32,0.3);
+    padding: 10px 10px 10px 10px;
+  }
+  /*Stretches the sectionheader after getting rid of two column strucure*/
+  .sectionheader {
+    margin: 10px auto 15px auto;
+    padding: 5px 10px 5px 10px;
+    width: 97%;
+    min-width: 0px;
+    text-align: center;
+    float: none;
+  }
+  /*Gets rid of two column structure*/
+  #degrees, #do {
+    margin: 15px 2% 0px 2%;
+    padding: 0px 20px;
+    width: 100%;
+    float: none;
+    list-style-type: none;
+    -webkit-padding-start: 0px;
+    border-left: 0px solid rgba(253,176,32,0.3);
+  }
+
+}
+
+/*Small devices, tablets*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /*No changes, just as designed*/
+  #name {
+    font-size: 3.6em;
+  }
+}
+
+/*Medium devices, desktops*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  #name {
+    font-size: 3.9em;
+  }
+}
+
+/*Large desktops*/
+@media only screen and (min-width: 992px) and (min-width: 1200px) {
+  /*Creates two column structure to pull skills and education up*/
+  #experience {
+    width: 60%;
+    float: right;
+  }
+  /*Creates two column structure to pull skills and education up*/
+  #education {
+    width: 38.5%;
+    float: left;
+    overflow-x: hidden;
+  }
+  /*Creates two column structure to pull skills and education up*/
+  #skills {
+    width: 38.5%;
+    float: left;
+    overflow-x: hidden;
+  }
+  /*Gets rid of internal two column structure within each section*/
+  #degrees, #do {
+    margin: 15px 2% 0px 2%;
+    padding: 0px 20px;
+    width: 100%;
+    float: none;
+    -webkit-padding-start: 0px;
+    border-left: 0px solid rgba(253,176,32,0.3);
+  }
+  /*Gets rid of internal two column structure within each section*/
+  .sectionheader {
+    margin: 7px auto 15px auto;
+    padding: 5px 10px 5px 10px;
+    width: 97%;
+    min-width: 0px;
+    float: none;
+  }
+  /*Gets rid of internal two column structure within each section*/
+  .alljobs {
+    width: 100%;
+    float: none;
+    margin: 0px 0px 0px 0px;
+    border-left: 0px solid rgba(253,176,32,0.3);
+    padding: 0px 10px 10px 10px;
+  }
+
+}
+/*this is x-small devices, mobile devices*/
+@media only screen and (max-width:767px) {
+
+
+}
+
+/*This is small devices, tablets*/
+@media only screen and (max-width: 991px) and (min-width: 768px){
+  
+}
+
+/*This is medium devices, tablets
+*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  }
+
+/*Large desktop*/
+@media only screen and (min-width: 1200px) {
+
+}
